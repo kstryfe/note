@@ -128,6 +128,9 @@ net.ipv6.conf.default disable_ipv6 = 1
 `audit2why`tool to simplify parsing audit logs provided by policycoreutils package *supposedly*
 `grep success /var/log/audit/audit.log | audit2why` example syntax to use audit2why
 `chcon` change context
+`restorecon` restore context to default
+`touch ./autorelabel` NUKE Option do not use
+
 ### contexts
 `unconfined_u` user context
 `object_r` role contexts
