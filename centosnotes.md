@@ -95,4 +95,9 @@ net.ipv6.conf.default disable_ipv6 = 1
 `sudo rm -rf rm /etc/yum.repo.d/CentOS-*`
 
 `/etc/yum.repo.d/`
-`sudo mv /home/admin/local.repo /etc/yum.repo.d/`
+`sudo mv /home/admin/local.repo /etc/yum.repo.d/
+`sudo yum clean all`
+`sudo yum makecache fast`
+`sudo yum update`
+`sudo yum upgrade`
+`sudo yum install`
