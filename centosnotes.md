@@ -125,7 +125,9 @@ net.ipv6.conf.default disable_ipv6 = 1
 `sudo vi /etc/selinux/config` reboot required to apply changes
 `sudo tail /var/log/audit/audit.log` log location
 `res=success` log entry that displays if SELinux blocks an action or not
-
+`audit2why`tool to simplify parsing audit logs provided by policycoreutils package *supposedly*
+`grep success /var/log/audit/audit.log | audit2why` example syntax to use audit2why
+`chcon` change context
 ### contexts
 `unconfined_u` user context
 `object_r` role contexts
