@@ -119,6 +119,20 @@ net.ipv6.conf.default disable_ipv6 = 1
 - requires (mandatory dependency)
 
 
+## SELinux
+`ll -Z` display SELinux context for files/directories
+`sestatus` display SELinux status
+`sudo vi /etc/selinux/config` reboot required to apply changes
+`sudo tail /var/log/audit/audit.log` log location
+`res=success` log entry that displays if SELinux blocks an action or not
+
+### contexts
+`unconfined_u` user context
+`object_r` role contexts
+`user_home_t` type
+`:s0-s0:c0.c1023` Multi-layer security (MLS) (uncommon in most implementations)
+
+
 ## random
 `cd` without any trailing entries returns to home directory
 `sudo -s` elevate privileges to root while maintaining log audit entries as your user.
