@@ -101,3 +101,4 @@ net.ipv6.conf.default disable_ipv6 = 1
 `sudo yum update`
 `sudo yum upgrade`
 `sudo yum install`
+`sudo yum provides <utility name.`
