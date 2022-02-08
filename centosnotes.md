@@ -28,6 +28,8 @@ boilerplate
 - /boot
 - /boot/efi
 - swap
+
+
 *all partitions besides /boot and /boot/efi resized to 1G for staging*
 ## System
 - add /tmp
@@ -85,3 +87,12 @@ net.ipv6.conf.default disable_ipv6 = 1
 ```
 
 `sudo sysctl -p`
+
+`sudo yum install <package>`
+`scp student@192.168.2.20:/repos/configs/local.repo /home/admin'
+
+`/etc/yum.repo.d/`
+`sudo rm -rf rm /etc/yum.repo.d/CentOS-*`
+
+`/etc/yum.repo.d/`
+`sudo mv /home/admin/local.repo /etc/yum.repo.d/`
