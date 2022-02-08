@@ -95,10 +95,31 @@ net.ipv6.conf.default disable_ipv6 = 1
 `sudo rm -rf rm /etc/yum.repo.d/CentOS-*`
 
 `/etc/yum.repo.d/`
-`sudo mv /home/admin/local.repo /etc/yum.repo.d/
+`sudo mv /home/admin/local.repo /etc/yum.repo.d/`
 `sudo yum clean all`
 `sudo yum makecache fast`
 `sudo yum update`
 `sudo yum upgrade`
 `sudo yum install`
-`sudo yum provides <utility name.`
+`sudo yum provides <utility name>`
+`sudo yum search`
+
+## systemd
+`sudo systemctl status sshd`
+`sudo systemctl <start/stop/restart/enable/disable> sshd`
+`sudo systemctl list-unit-files`
+
+`sudo vi /usr/lib/systemd/system/sshd.service`
+
+### within unit files
+**load order control**
+- before (start before specified service)
+- after (start after specified service)
+- wants (optional dependency)
+- requires (mandatory dependency)
+
+
+## random
+`cd` without any trailing entries returns to home directory
+`sudo -s` elevate privileges to root while maintaining log audit entries as your user.
+`sudo systemctl status <unit-file>` also gives location of configuration file location
