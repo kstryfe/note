@@ -25,6 +25,7 @@
 
 
 ## ifup-local script
+This script is incorrect and needs to be replaced with the working version
 ```
 #!/bin/bash
 if [[ "$1" == "enp5s0" ]]
