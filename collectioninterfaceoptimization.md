@@ -1,4 +1,6 @@
-`scp student@192.168.2.20:/repos/interface_prep.sh`
+`scp student@192.168.2.20:/repos/configs/interface_prep.sh`
+`sudo chmod +x interface_prep.sh`
+`sudo ./interface_prep enp5s0`
 ## optimization script
 ```
 #!/bin/bash
