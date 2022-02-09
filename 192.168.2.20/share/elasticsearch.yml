@@ -1,0 +1,8 @@
+cluster.name:  <SG#>
+node.name:  sensor1
+path.data: /data/elasticsearch
+path.logs: /var/log/elasticsearch
+bootstrap.memory_lock: true
+network.host: _local:ipv4_
+discovery.seed_hosts: ["localhost"]
+cluster.initial_master_nodes: ["sensor1"]

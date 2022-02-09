@@ -1,0 +1,17 @@
+%YAML 1.1
+---
+default-log-dir: /data/suricata
+logging:
+  outputs:
+  - console:
+    - fast:
+        enabled: no
+    - eve-log:
+        enabled: yes
+        filetype: regular
+        filename: eve.json
+    - unified2-alert:
+        enabled: no
+    - http-log:
+        enabled: no
+

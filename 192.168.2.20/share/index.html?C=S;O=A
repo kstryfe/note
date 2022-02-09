@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /share</title>
+ </head>
+ <body>
+<h1>Index of /share</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=A">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=D">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/">Parent Directory</a>       </td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="json.zeek">json.zeek</a>              </td><td align="right">2022-02-09 21:56  </td><td align="right"> 80 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="local.zeek">local.zeek</a>             </td><td align="right">2022-02-09 21:56  </td><td align="right"> 87 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="afpacket.zeek">afpacket.zeek</a>          </td><td align="right">2022-02-09 21:56  </td><td align="right">102 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="repo.conf">repo.conf</a>              </td><td align="right">2022-02-09 21:56  </td><td align="right">213 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="elasticsearch.yml">elasticsearch.yml</a>      </td><td align="right">2022-02-09 21:56  </td><td align="right">239 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="my-overrides.yaml">my-overrides.yaml</a>      </td><td align="right">2022-02-09 21:56  </td><td align="right">279 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="extract-files.zeek">extract-files.zeek</a>     </td><td align="right">2022-02-09 21:56  </td><td align="right">291 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="interface.sh">interface.sh</a>           </td><td align="right">2022-02-09 21:56  </td><td align="right">349 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="local.repo">local.repo</a>             </td><td align="right">2022-02-09 21:56  </td><td align="right">551 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="fsf.zeek">fsf.zeek</a>               </td><td align="right">2022-02-09 21:56  </td><td align="right">622 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="kafka.zeek">kafka.zeek</a>             </td><td align="right">2022-02-09 21:56  </td><td align="right">703 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="extension.zeek">extension.zeek</a>         </td><td align="right">2022-02-09 21:56  </td><td align="right">827 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="filebeat.yml">filebeat.yml</a>           </td><td align="right">2022-02-09 21:56  </td><td align="right">1.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="reference.config">reference.config</a>       </td><td align="right">2022-02-09 21:56  </td><td align="right">1.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="classification.config">classification.config</a>  </td><td align="right">2022-02-09 21:56  </td><td align="right">4.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/tar.gif" alt="[   ]"></td><td><a href="ecskibana.tar">ecskibana.tar</a>          </td><td align="right">2022-02-09 21:56  </td><td align="right"> 40K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/tar.gif" alt="[   ]"></td><td><a href="logstash.tar">logstash.tar</a>           </td><td align="right">2022-02-09 21:56  </td><td align="right">200K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="all-class-files.zip">all-class-files.zip</a>    </td><td align="right">2022-02-09 21:56  </td><td align="right">5.1M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/tar.gif" alt="[   ]"></td><td><a href="emerging.rules.tar">emerging.rules.tar</a>     </td><td align="right">2022-02-09 21:56  </td><td align="right"> 21M</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+</body></html>
