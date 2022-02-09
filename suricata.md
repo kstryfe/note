@@ -33,3 +33,13 @@ edit to the following
 # Add options to be passed to the daemon
 OPTIONS="--af-packet=enp5s0 --user suricata "
 ```
+## update rules
+`sudo suricata-update add-source local-emerging-threats http://192.168.2.20/share/emerging.rules.tar`
+
+## set folder permissions
+`sudo chown -R suricata:suricata /data/suricata`
+
+## start service
+`sudo systemctl start suricata`
+`sudo systemctl status suricata`
+`sudo systemctl enable suricata`
