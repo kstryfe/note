@@ -144,3 +144,4 @@ net.ipv6.conf.default disable_ipv6 = 1
 `sudo systemctl status <unit-file>` also gives location of configuration file location
 `!!` repeat last typed command `sudo !!` to repeat last command with elevated rights
 `^vi^tail` find and replace text in previous command, in example run tail on a file previously opened in vi
+`mkdir {subfolder1,subfolder2}` create multiple directories in current folder with a single command.
