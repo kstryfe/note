@@ -142,3 +142,5 @@ net.ipv6.conf.default disable_ipv6 = 1
 `cd` without any trailing entries returns to home directory
 `sudo -s` elevate privileges to root while maintaining log audit entries as your user.
 `sudo systemctl status <unit-file>` also gives location of configuration file location
+`!!` repeat last typed command `sudo !!` to repeat last command with elevated rights
+`^texttobereplacedinpreviouscommand^` research further find and replace for previous command
