@@ -17,3 +17,6 @@
 
 /usr/sbin/ip link set dev $1 promisc on
 ```
+
+## display current settings
+`ethtool -k <interface>`
