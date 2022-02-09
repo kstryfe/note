@@ -61,6 +61,27 @@ if [ -x /sbin/ifup-local ]; then
     /sbin/ifup-local ${DEVICE]
 fi
 ```
+## configure interface
+`sudo vi /etc/sysconfig/network-scripts/ifcfg-enp5s0`
+verify settings match below
+```
+TYPE=Ethernet
+PROXY_METHOD=none
+BROWSER_ONLY=no
+BOOTPROTO=none
+DEFROUTE=none
+IPV4_FAILURE_FATAL=no
+IPV6INIT=no
+IPV6_AUTOCONF=no
+IPV6_DEFROUTE=no
+IPV6_FAILURE_FATAL=no
+IPV6_ADDR_GEN_MODE=stable-privacy
+NAME=enp5s0
+UUID=5ed60a2e-fd5f-4901-8be4-d7e75bda4558
+DEVICE=enp5s0
+ONBOOT=yes
+```
+
 
 ## random
 research implementation of checksumming and segmentation offloading
