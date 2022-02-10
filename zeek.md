@@ -25,6 +25,62 @@ append
 ## clustering configuration / CPU pinning
 `sudo vi /etc/zeek/node.cfg`
 
+comment out standalone configuration
+
+logger is optional
+
+manager collects logs from load balanced workers and produces a single log file for kafka ingestion
+
+proxy coordinates workers for peer to peer communication to offload workloads from manager
+
+"env_vars=fanout_id=XX" arbitrary number to identify af_packet fanout instance
+
+
+example config for cluster config
+```
+# Example ZeekControl node configuration.
+#
+# This example has a standalone node ready to go except for possibly changing
+# the sniffing interface.
+
+# This is a complete standalone configuration.  Most likely you will
+# only need to change the interface.
+#[zeek]
+#type=standalone
+#host=localhost
+#interface=eth0
+
+## Below is an example clustered configuration. If you use this,
+## remove the [zeek] node above.
+
+#[logger]
+#type=logger
+#host=localhost
+#
+[manager]
+type=manager
+host=localhost
+pin_cpus=3
+#
+[proxy-1]
+type=proxy
+host=localhost
+#
+[worker-1]
+type=worker
+host=localhost
+interface=enp5s0
+lb_method=custom
+lb_procs=2
+pin_cpus=1,2
+env_vars=fanout_id=93
+#
+#[worker-2]
+#type=worker
+#host=localhost
+#interface=eth0
+```
+
 
 ## CPU pinning
 `lscpu -e` efficient way to list cores
