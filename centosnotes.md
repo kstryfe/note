@@ -148,3 +148,4 @@ net.ipv6.conf.default disable_ipv6 = 1
 ## VI commands
 `:set nu` display line numbers
 `:<linenumber>` jump to line number
+<shift-G> jump to last line in a file in vi
