@@ -100,6 +100,16 @@ CPU NODE SOCKET CORE L1d:L1i:L2:L3 ONLINE MAXMHZ    MINMHZ
 ```
 in above example you could select "CPU 1" OR "CPU 5" not both, "CPU 2" OR "CPU 6" not both, etc.
 
+## zeek scripts
+file path
+`/usr/share/zeek/`
+
+`/usr/share/zeek/site/local.zeek`
+`sudo mkdir /usr/share/zeek/site/scripts`
+`cd /usr/share/zeek/site/scripts`
+`sudo curl -L -O http://192.168.2.20/share/afpacket.zeek`
+`sudo vi afpacket.zeek` script references "fanout_id" specified in /etc/zeek/node.cfg
+
 ##notes
 - zeek CAN autopin cores but it is not efficient on larger systems and benefits from manual pinning to force it to use the resources available
 - general rule of thumb is 1 core per 180Mbps (official number is 250Mbps)
