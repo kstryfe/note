@@ -135,6 +135,7 @@ append
 
 ## start zeek
 `sudo zeekctl deploy` reloads gracefully and reparses config and scripts
+`sudo zeekctl start` starts any stopped instances, already running instances do not reparse configs
 `sudo zeekctl status` display zeek status
 
 ##notes
