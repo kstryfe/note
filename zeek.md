@@ -124,6 +124,10 @@ append
 @load scripts/extract-files.zeek
 ```
 
+
+## start zeek
+`sudo zeekctl deploy` reloads gracefully and reparses config and scripts
+
 ##notes
 - zeek CAN autopin cores but it is not efficient on larger systems and benefits from manual pinning to force it to use the resources available
 - general rule of thumb is 1 core per 180Mbps (official number is 250Mbps)
