@@ -123,6 +123,8 @@ file path
 
 `sudo curl -L -O http://192.168.2.20/share/fsf.zeek` support file extraction from streams
 
+`sudo curl -L -O http://192.168.2.20/share/json.zeek`
+
 `sudo vi /usr/share/zeek/site/local.zeek`
 append
 ```
@@ -130,6 +132,7 @@ append
 @load scripts/extension.zeek
 @load scripts/extract-files.zeek
 @load scripts/fsf.zeek
+@load scripts/json.zeek
 ```
 
 
