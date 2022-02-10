@@ -128,18 +128,18 @@ server.1=localhost:2182:2183
 ### troubleshooting
 `sudo systemctl stop fsf`
 `sudo zeekctl stop`
-`/usr/share/kafka/bin/kafka-topics.sh --delete --zookeeper --localhost:2181 --topic zeek-raw`
-`/usr/share/kafka/bin/kafka-topics.sh --create --zookeeper --localhost:2181 --replication-factor 1 --partitions 8 --topic zeek-raw`
-`/usr/share/kafka/bin/kafka-topics.sh --create --zookeeper --localhost:2181 --replication-factor 1 --partitions 8 --topic suricata-raw`
-`/usr/share/kafka/bin/kafka-topics.sh --create --zookeeper --localhost:2181 --replication-factor 1 --partitions 8 --topic fsf-raw`
+`/usr/share/kafka/bin/kafka-topics.sh --delete --zookeeper localhost:2181 --topic zeek-raw`
+`/usr/share/kafka/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 8 --topic zeek-raw`
+`/usr/share/kafka/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 8 --topic suricata-raw`
+`/usr/share/kafka/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 8 --topic fsf-raw`
 `sudo zeekctl start`
 `sudo systemctl start fsf`
 
 describe
-`/usr/share/kafka/bin/kafka-topics.sh --describe --zookeeper --localhost:2181 --topic zeek-raw` provides information on topic, blank reply means no data present (possible feed problem)
+`/usr/share/kafka/bin/kafka-topics.sh --describe --zookeeper localhost:2181 --topic zeek-raw` provides information on topic, blank reply means no data present (possible feed problem)
 
 raw dump of topic (for troubleshooting, wall of text)
-`/usr/share/kafka/bin/kafka-console-consumer.sh --bootstrap-server --localhost:2181 --topic zeek-raw` to test for incoming traffic
+`/usr/share/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic zeek-raw` to test for incoming traffic
 ## notes
 - kafka is not recommended to be co-located with sensors due to resource contention.
 - in practice superior to directly feeding into logstash
