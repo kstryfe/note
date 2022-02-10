@@ -63,3 +63,7 @@ CLIENT_CONFIG = { 'LOG_FILE' : '{{ fsf_client_logfile }}' }
 
 ## manual fsf test
 `/opt/fsf/fsf-client/fsf-client.py --full <examplefile>` outputs hashes and other information in JSON format
+
+## verify zeek functionality with fsf
+`ls /data/zeek/extract_files/`
+`tail /data/fsf/rockout.log`

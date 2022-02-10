@@ -138,6 +138,10 @@ append
 `sudo zeekctl start` starts any stopped instances, already running instances do not reparse configs
 `sudo zeekctl status` display zeek status
 
+## verify zeek functionality with fsf
+`ls /data/zeek/extract_files/`
+`tail /data/fsf/rockout.log`
+
 ##notes
 - zeek CAN autopin cores but it is not efficient on larger systems and benefits from manual pinning to force it to use the resources available
 - general rule of thumb is 1 core per 180Mbps (official number is 250Mbps)
