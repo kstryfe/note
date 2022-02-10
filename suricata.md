@@ -43,3 +43,8 @@ OPTIONS="--af-packet=enp5s0 --user suricata "
 `sudo systemctl start suricata`
 `sudo systemctl status suricata`
 `sudo systemctl enable suricata`
+
+
+## notes
+- suricata can have cores pinned similar to zeek, same rules apply
+- generic rule of thumb ratio of cores 5 zeek for every 1 suricata 
