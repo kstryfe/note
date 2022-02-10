@@ -46,6 +46,10 @@ advertised.listeners=PLAINTEXT://localhost:9092
 ```
 
 "log.dirs" change to `/data/kafka/logs` (create "logs" subfolder)
+```
+# A comma separated list of directories under which to store log files
+log.dirs=/data/kafka/logs
+```
 
 "log.retention.hours" how long kafka retains logs (reccomended to set to 3-4 days in production to account for outages without losing data)
 
@@ -64,6 +68,10 @@ zookeeper.connection.timeout.ms=6000
 
 "bootstrap.servers" specify kafka servers
 "zookeeper.connect" specify zookeeper connection details (host/port)
+```
+bootstrap.servers=localhost:9092
+zookeeper.connect=localhost:2181
+```
 
 `sudo vi /usr/share/kafka/config/consumer.properties`
 
@@ -71,11 +79,18 @@ zookeeper.connection.timeout.ms=6000
 "zookeeper.connect" specify zookeeper connection details (host/port)
 "group.id" identifier for consumer group (string)
 
+```
+bootstrap.servers=localhost:9092
+zookeeper.connect=localhost:2181
+# consumer group id
+group.id=test-consumer-group
+```
+
 `sudo chown -R kafka:kafka /data/kafka`
 `sudo mkdir /data/kafka/logs`
 
 
-` sudo firewall-cmd --add-port {9092,2181,2182,2183}/tcp --permanent`
+`sudo firewall-cmd --add-port {9092,2181,2182,2183}/tcp --permanent`
 `sudo firewall-cmd --reload`
 
 ### start zookeeper before kafka
@@ -114,3 +129,4 @@ server.1=localhost:2182:2183
 - kafka is not recommended to be co-located with sensors due to resource contention.
 - in practice superior to directly feeding into logstash
 - possible log4j concerns between zookeeper, elastic, etc.
+- strelka

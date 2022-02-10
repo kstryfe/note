@@ -8,9 +8,7 @@
 "EXPORT_PATH" needs to be updated to "/data/fsf/archive" (create subfolder)
 "TIMEOUT" how long FSF will attempt to analyze a file before giving up and producing what it has at that point
 "MAX_DEPTH" how many levels into a compressed file or folder FSF will recurse into for analysis
-
 "ACTIVE_LOGGING_MODULES" needs to be set to "rockout"
-
 example
 ```
 #!/usr/bin/env python
@@ -51,9 +49,6 @@ SERVER_CONFIG = { 'IP_ADDRESS' : ['127.0.0.1',],
 # Full path to debug file if run with --suppress-report
 CLIENT_CONFIG = { 'LOG_FILE' : '{{ fsf_client_logfile }}' }
 ```
-
-
-
 ### create subfolders and set permissions
 `sudo mkdir -p /data/fsf/archive`
 `sudo chown -R fsf:fsf /data/fsf`
@@ -68,4 +63,3 @@ CLIENT_CONFIG = { 'LOG_FILE' : '{{ fsf_client_logfile }}' }
 
 ## manual fsf test
 `/opt/fsf/fsf-client/fsf-client.py --full <examplefile>` outputs hashes and other information in JSON format
-  
