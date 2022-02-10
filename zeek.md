@@ -9,11 +9,12 @@
 
 ## general configuration
 `sudo vi /etc/zeek/zeekctl.cfg`
-"LogRotationInterval" set to "0" to disable logging (logging only needed for setup troubleshooting as kafka collects logs instead)
+"LogRotationInterval" set to "0" to disable logging (logging only needed for setup troubleshooting as kafka collects logs instead in production scenario)
 
 "SitePolicyScripts" defines site specific policy scripts for customization
 
-" LogDir" defines default log location if logging enabled (update to point to /data/zeek)
+"LogDir" defines default log location if logging enabled (update to point to /data/zeek)
+to verify  zeek functionality look for log output in `/data/zeek/current` logs strart in `/current` and get rotated to timestamped directories.
 
 "SpoolDir" defines spool folder (can be optionally set to separate partition/drive)
 
