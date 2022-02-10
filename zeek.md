@@ -35,6 +35,10 @@ proxy coordinates workers for peer to peer communication to offload workloads fr
 
 "env_vars=fanout_id=XX" arbitrary number to identify af_packet fanout instance
 
+"lb_procs" defines number of threads
+
+"pin_cpus" defines cores to pin to
+
 
 example config for cluster config
 ```
@@ -127,6 +131,7 @@ append
 
 ## start zeek
 `sudo zeekctl deploy` reloads gracefully and reparses config and scripts
+`sudo zeekctl status` display zeek status
 
 ##notes
 - zeek CAN autopin cores but it is not efficient on larger systems and benefits from manual pinning to force it to use the resources available
