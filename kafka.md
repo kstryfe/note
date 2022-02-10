@@ -138,5 +138,7 @@ troubleshooting
 `sudo zeekctl stop`
 `/usr/share/kafka/bin/kafka-topics.sh --delete --zookeeper --localhst:2181 --topic zeek-raw`
 `/usr/share/kafka/bin/kafka-topics.sh --create --zookeeper --localhst:2181 --replication-factor 1 --partitions 8 --topic zeek-raw`
+`/usr/share/kafka/bin/kafka-topics.sh --create --zookeeper --localhst:2181 --replication-factor 1 --partitions 8 --topic suricata-raw`
+`/usr/share/kafka/bin/kafka-topics.sh --create --zookeeper --localhst:2181 --replication-factor 1 --partitions 8 --topic fsf-raw`
 `sudo zeekctl start`
 `sudo systemctl start fsf`
