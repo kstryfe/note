@@ -104,13 +104,28 @@ in above example you could select "CPU 1" OR "CPU 5" not both, "CPU 2" OR "CPU 6
 file path
 `/usr/share/zeek/`
 
-`/usr/share/zeek/site/local.zeek`
+`/usr/share/zeek/site/local.zeek` local zeek script configuration, append additional scripts to be loaded as shown below
 `sudo mkdir /usr/share/zeek/site/scripts`
 `cd /usr/share/zeek/site/scripts`
+
+
 `sudo curl -L -O http://192.168.2.20/share/afpacket.zeek`
 `sudo vi afpacket.zeek` script references "fanout_id" specified in /etc/zeek/node.cfg
+
+`sudo curl -L -O http://192.168.2.20/share/extension.zeek` supports tagging streams based on sensor
+
+`sudo curl -L -O http://192.168.2.20/share/extract-files.zeek` support file extraction from streams
+
+`sudo vi /usr/share/zeek/site/local.zeek`
+append
+```
+@load scripts/afpacket.zeek
+@load scripts/extension.zeek
+@load scripts/extract-files.zeek
+```
 
 ##notes
 - zeek CAN autopin cores but it is not efficient on larger systems and benefits from manual pinning to force it to use the resources available
 - general rule of thumb is 1 core per 180Mbps (official number is 250Mbps)
 - Hyperthreading conflict if pinning to multiple hyperthread cores on same core (will crash zeek) use one per core
+- zeek runs as root by default, but can be configured to run as a zeek user with some additional system configuration
