@@ -90,7 +90,7 @@ group.id=test-consumer-group
 `sudo mkdir /data/kafka/logs`
 
 
-`sudo firewall-cmd --add-port {9092,2181,2182,2183}/tcp --permanent`
+`sudo firewall-cmd --add-port={9092,2181,2182,2183}/tcp --permanent`
 `sudo firewall-cmd --reload`
 
 ### start zookeeper before kafka
@@ -124,7 +124,7 @@ server.1=localhost:2182:2183
 ```
 
 ### manual test
-`/usr/share/kafka/bin/kafka-topics.sh --create --zookeeper --localhost:2181 --replication-factor 1 --partitions 8 --topic zeek-raw`
+`/usr/share/kafka/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 8 --topic zeek-raw`
 ### troubleshooting
 `sudo systemctl stop fsf`
 `sudo zeekctl stop`

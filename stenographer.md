@@ -34,6 +34,10 @@ syntax `stenokeys.sh <user> <group>`
 `sudo mkdir {index,packets}`
 `sudo chown -R stenographer:stenographer /data/stenographer`
 
+## Firewall
+`sudo firewall-cmd --add-port=1234/tcp --permanent`
+`sudo firewall-cmd --reload`
+
 # start stenographer service
 `sudo systemctl start stenographer`
 `sudo systemctl status stenographer` or `sudo ^start^status` if these two commands are run sequentially
@@ -44,9 +48,7 @@ syntax `stenokeys.sh <user> <group>`
 `sudo  stenoread `host 8.8.8.8``
 
 
-## Firewall
-`sudo firewall-cmd --add-port=1234/tcp --permanent`
-`sudo firewall-cmd --reload`
+
 
 ## notes
 - "DiskFreePercentage" dictates the point at which stenographer will start overwriting old data, i.e. at 10% free (90% full). A buffer of free space is reccomended to account for disk latency to prevent filling drive and crashing stenographer on spinning disks.

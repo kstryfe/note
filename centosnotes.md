@@ -15,9 +15,10 @@ network config (enough to get ssh in)
 - installation destination (select both drives)
 - select (-) and delete all partitions before selecting boilerplate
 - delete  or rename "/home" to one of the required partitions (no separate partition needed for /home)
+- select "/" partition and on "Volume Group" dropdown select "create a new volume group" and create a "system" VG assigned to 500G drive, and a "data" VG assigned to 1T drives
 
-
-
+- user accounts, DO NOT set a root password
+- create user account and select "make this user an administrator" checkbox
 
 ## Data partition
 collector storage
@@ -88,7 +89,9 @@ assign created partitions to specific volume groups by modifying setting in anac
 `sudo vi /etc/sysconfig/network-scripts/ifcfg-eno1`
 - set all boolean IPv6 values to "no"
 - set "ONBOOT" to yes
-`sudo vi /etc/sysctl.config`
+
+
+`sudo vi /etc/sysctl.conf`
 - append
 ```
 net.ipv6.all disable_ipv6 = 1
