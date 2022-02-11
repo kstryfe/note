@@ -1,4 +1,5 @@
 # Centos notes
+Anaconda
 
 UTC timezone with default ntp pool
 
@@ -7,8 +8,15 @@ minimal install
 - disable kdump
 
 network config (enough to get ssh in)
-- int eno1 management
+- int eno1 management (enable, DHCP)
 - int enp5s0 collector
+
+
+- installation destination (select both drives)
+- select (-) and delete all partitions before selecting boilerplate
+- delete  or rename "/home" to one of the required partitions (no separate partition needed for /home)
+
+
 
 
 ## Data partition
@@ -57,6 +65,7 @@ assign created partitions to specific volume groups by modifying setting in anac
 *leave capacity field blank to autofill max available capacity, always do those last*
 ## System / 255.56G (leave field blank)
 - /boot 1G (default)
+- / (leave blank)
 - /boot/efi 200M (default)
 - swap 16G (half of RAM)
 - /tmp 5G
