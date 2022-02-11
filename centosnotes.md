@@ -78,7 +78,7 @@ assign created partitions to specific volume groups by modifying setting in anac
 
 `sudo vi /etc/sysconfig/network-scripts/ifcfg-eno1`
 - set all boolean IPv6 values to "no"
-
+- set "ONBOOT" to yes
 `sudo vi /etc/sysctl.config`
 - append
 ```

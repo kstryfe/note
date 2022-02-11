@@ -21,7 +21,7 @@ import socket
 
 SCANNER_CONFIG = { 'LOG_PATH' : '/data/fsf',
                    'YARA_PATH' : '/var/lib/yara-rules/rules.yara',
-                   'PID_PATH' : '/tmp/scanner.pid',
+                   'PID_PATH' : '/run/fsf/fsf.pid',
                    'EXPORT_PATH' : '/data/fsf/archive',
                    'TIMEOUT' : 60,
                    'MAX_DEPTH' : 10,
@@ -50,7 +50,7 @@ SERVER_CONFIG = { 'IP_ADDRESS' : ['127.0.0.1',],
 CLIENT_CONFIG = { 'LOG_FILE' : '{{ fsf_client_logfile }}' }
 ```
 ### create subfolders and set permissions
-`sudo mkdir -p /data/fsf/archive`
+`sudo mkdir -p /data/fsf/{archive,logs}`
 `sudo chown -R fsf:fsf /data/fsf`
 
 ## firewall rules
