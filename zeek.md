@@ -182,3 +182,4 @@ append
 - general rule of thumb is 1 core per 180Mbps (official number is 250Mbps)
 - Hyperthreading conflict if pinning to multiple hyperthread cores on same core (will crash zeek) use one per core
 - zeek runs as root by default, but can be configured to run as a zeek user with some additional system configuration
+- optional disable log to disk to save resources as logs are already shipped to kafka

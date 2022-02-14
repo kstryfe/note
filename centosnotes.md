@@ -64,9 +64,9 @@ assign created partitions to specific volume groups by modifying setting in anac
 
 ## Partition sizing
 *leave capacity field blank to autofill max available capacity, always do those last*
-## System / 255.56G (leave field blank)
+## System
+- / 255.56G (leave field blank)
 - /boot 1G (default)
-- / (leave blank)
 - /boot/efi 200M (default)
 - swap 16G (half of RAM)
 - /tmp 5G
