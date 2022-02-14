@@ -7,3 +7,4 @@
 5. fsf
 6. filebeat
 7. logstash
+8. elasticsearch
