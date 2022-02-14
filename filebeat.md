@@ -67,6 +67,10 @@ logging.files:
   permissions: 0644
 ```
 
+## troubleshooting
+`sudo /usr/share/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic suricata-raw --from-beginning` to show output from filebeats as configured.
+`sudo /usr/share/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic fsf-raw --from-beginning` critical to use "--from-beginning" for fsf as files are not steadily flowing across the network and you may miss the traffic.
+
 ##notes
 - you always want a message queue between feeds and elastic (kafka is a message queue)
 - /var/log/filebeat contains filebeat logging for troubleshooting

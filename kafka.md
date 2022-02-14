@@ -145,3 +145,4 @@ raw dump of topic (for troubleshooting, wall of text)
 - in practice superior to directly feeding into logstash
 - possible log4j concerns between zookeeper, elastic, etc.
 - kafka will autocreate topics, but you can also specify topics
+- kafka supports "parralel writing" by having each thread assigned to a separate partition, allowing for scaling.

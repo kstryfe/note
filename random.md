@@ -16,3 +16,6 @@ right of kafka as well as kafka virtualized/containerized
 "Machine learning node manager"
 "Dedicated machine learning nodes"
 "kubernetes dynamic ML nodes (on demand, spin up, run, spin down)"
+
+
+Cluster>Node>Index>Shard

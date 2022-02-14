@@ -5,3 +5,5 @@
 4. kafka/zookeeper
 4. zeek
 5. fsf
+6. filebeat
+7. logstash
