@@ -98,3 +98,7 @@ output {
         }
       }
 ```
+
+###troubleshooting
+`watch systemctl status logstash`
+"Active"timer will recycle in case of failure, timer should increment steadily up.
