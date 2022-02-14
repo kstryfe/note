@@ -19,3 +19,7 @@ right of kafka as well as kafka virtualized/containerized
 
 
 Cluster>Node>Index>Shard
+
+
+Elasticsearch has a max RAM limit per node of <32G ram due to a Java limitation (same as minecraft)
+docker swarm (deprecated)/kubernetes reccomended for node management.
