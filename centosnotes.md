@@ -161,3 +161,6 @@ net.ipv6.conf.default disable_ipv6 = 1
 `:set nu` display line numbers
 `:<linenumber>` jump to line number
 <shift-G> jump to last line in a file in vi
+`ss` another utility to accomplish `netstat -l` but nicer output
+`lscpu -e` efficient way to list CPU cores, without flags produces same output as `cat /proc/cpuinfo`
+`journalctl -xeu <servicename>` narrows focus of reported logs to specific service/unit 

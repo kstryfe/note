@@ -23,3 +23,25 @@ Cluster>Node>Index>Shard
 
 Elasticsearch has a max RAM limit per node of <32G ram due to a Java limitation (same as minecraft)
 docker swarm (deprecated)/kubernetes reccomended for node management.
+
+
+Remote full stack is preferred solution to small pipe scenarios. "Cross-cluster Search" is utilized to query data quickly and efficiently. Primary concern is local storage space and retention.All local logging to disk is disabled and a large kafka store is allocated.
+
+
+Option 2 is to have a remote kafka cluster colocated with all the collection tools and have it feed back to the main Logstash
+(benefit is central location of single elasticsearch instance)
+
+quick and dirty status script
+```
+#!/bin/bash
+systemctl status stenographer | grep 'Active:'
+systemctl status suricata | grep 'Active:'
+systemctl status kafka | grep 'Active:'
+systemctl status zookeeper | grep 'Active:'
+systemctl status fsf | grep 'Active:'
+systemctl status filebeat | grep 'Active'
+systemctl status logstash | grep 'Active'
+systemctl status elasticsearch | grep 'Active'
+systemctl status kibana | grep 'Active'
+zeekctl status
+```
