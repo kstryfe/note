@@ -45,3 +45,16 @@ systemctl status elasticsearch | grep 'Active'
 systemctl status kibana | grep 'Active'
 zeekctl status
 ```
+
+
+to override self signed cert issues in chrome type "thisisunsafe" on the warning page.
+
+
+Test items
+- Zeek data seen in Kibana
+- suricata data seen in Kibana
+- FSF data seen in kibana
+- Correctly configured partitions
+- data in /data/stenographer/packets/
+- selinux enabled (proper chown settings)
+- services up and running
