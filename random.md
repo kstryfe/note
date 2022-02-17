@@ -49,7 +49,8 @@ systemctl status kibana | grep 'Active'
 zeekctl status
 ```
 
-
+## troubleshooting tip
+`ls -ltc` list files by modification time
 to override self signed cert issues in chrome type "thisisunsafe" on the warning page.
 
 
