@@ -7,7 +7,7 @@
 `:17` `cluster.name: SG-3`
 `:23` `node.name: node-1` something useful
 `:27` node.rack.
-`:55` `network.host: _local:1pv4_` shortcut to bind to local IP, can also be specific.
+`:55` `network.host: _local:ipv4_` shortcut to bind to local IP, can also be specific.
 `sudo mkdir /usr/lib/systemd/system/elasticsearch.service.d`
 `sudo chmod 755 /usr/lib/systemd/system/elasticsearch.service.d`
 `sudo vi /usr/lib/systemd/system/elasticsearch.service.d/override.conf`
