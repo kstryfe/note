@@ -8,3 +8,4 @@
 6. filebeat
 7. logstash
 8. elasticsearch
+9. kibana

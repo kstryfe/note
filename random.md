@@ -31,6 +31,8 @@ Remote full stack is preferred solution to small pipe scenarios. "Cross-cluster 
 Option 2 is to have a remote kafka cluster colocated with all the collection tools and have it feed back to the main Logstash
 (benefit is central location of single elasticsearch instance)
 
+## mass install
+`sudo yum install stenographer kafka librdkafka zookeeper elasticsearch zeek zeek-plugin-kafka zeek-plugin-af_packet filebeat fsf kibana suricata`
 quick and dirty status script
 ```
 #!/bin/bash

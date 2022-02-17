@@ -77,7 +77,7 @@ assign created partitions to specific volume groups by modifying setting in anac
 - /data/stenographer 500G
 - /data/suricata 25G
 - /data/zeek 25G
-- /data/elasticsearch 271.5G (leave field blank)
+- /data/elasticsearch 371.5G (leave field blank)
 - /data/fsf 10G
 - /data/kafka 100G
 
@@ -163,4 +163,4 @@ net.ipv6.conf.default disable_ipv6 = 1
 <shift-G> jump to last line in a file in vi
 `ss` another utility to accomplish `netstat -l` but nicer output
 `lscpu -e` efficient way to list CPU cores, without flags produces same output as `cat /proc/cpuinfo`
-`journalctl -xeu <servicename>` narrows focus of reported logs to specific service/unit 
+`journalctl -xeu <servicename>` narrows focus of reported logs to specific service/unit

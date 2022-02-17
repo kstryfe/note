@@ -23,6 +23,23 @@ topic based instance (primary)
 ### replicas
 redundant instance of a partition on a separate node (failover)
 
+## zookeeper
+manages kafka nodes, partitions, and topics.  necessary for kafka operation (basically the kafka manager/master node)
+
+configuration path
+`/etc/zookeeper/`
+
+`sudo vi /etc/zookeeper/zoo.cfg`
+
+"dataDir" specifies data location for zookeeper.
+
+"clientPort" specifies port, additional lines needed for cluster communication (master selection,etc)
+example
+```
+clientPort=2181
+server.1=localhost:2182:2183
+```
+
 
 ## kafka config
 
@@ -106,22 +123,6 @@ example
 ```
 
 
-## zookeeper
-manages kafka nodes, partitions, and topics.  necessary for kafka operation (basically the kafka manager/master node)
-
-configuration path
-`/etc/zookeeper/`
-
-`sudo vi /etc/zookeeper/zoo.cfg`
-
-"dataDir" specifies data location for zookeeper.
-
-"clientPort" specifies port, additional lines needed for cluster communication (master selection,etc)
-example
-```
-clientPort=2181
-server.1=localhost:2182:2183
-```
 
 ### manual test
 `/usr/share/kafka/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 8 --topic zeek-raw`
