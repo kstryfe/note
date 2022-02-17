@@ -32,7 +32,7 @@ Option 2 is to have a remote kafka cluster colocated with all the collection too
 (benefit is central location of single elasticsearch instance)
 
 ## mass install
-`sudo yum install stenographer kafka librdkafka zookeeper elasticsearch zeek zeek-plugin-kafka zeek-plugin-af_packet filebeat fsf kibana suricata`
+`sudo yum install stenographer kafka librdkafka zookeeper elasticsearch zeek zeek-plugin-kafka zeek-plugin-af_packet filebeat fsf kibana suricata logstash`
 quick and dirty status script
 ```
 #!/bin/bash
@@ -60,3 +60,4 @@ Test items
 - data in /data/stenographer/packets/
 - selinux enabled (proper chown settings)
 - services up and running
+- index patterns
