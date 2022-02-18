@@ -9,7 +9,7 @@ Reference yml file
 `sudo less /etc/filebeat/filebeat.reference.yml`
 
 rename default to backup
-`sudo mv /etc/filebeat.yml /etc/filebeat.yml.bk`
+`sudo mv /etc/filebeat/filebeat.yml /etc/filebeat/filebeat.yml.bk`
 
 
 `cd /etc/filebeat/`
